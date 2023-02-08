@@ -63,7 +63,7 @@
       border-radius: 30px;
    }
    &__item:nth-child(3) {
-      background-color: #a3bbc8;
+      background-color: $second;
    }
    &__smart-item {
       position: relative;
@@ -86,10 +86,112 @@
       color: #243f4d;
       @extend %DMSans-400;
    }
-
-
-
 }
+
+.footer-top {
+   display: flex;
+   padding: 80px 0 70px;
+   border-bottom: 1px solid #dae4e9;
+   a {
+      display: block;
+      color: $subsidiary;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 14px;
+      @extend %rubik-400;
+   }
+   &__contact {
+      max-width: 200px;
+      width: 100%;
+      margin-right: 100px;
+   }
+   &__nav {
+      max-width: 170px;
+      width: 100%;
+      margin-right: 130px;
+   }
+   &__item-form {
+      max-width: 270px;
+      width: 100%;
+   }
+   &__logo {
+      display: flex !important;
+      margin-bottom: 18px;
+   }
+   &__title {
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      padding: 20px 0;
+      @extend %DMSans-700;
+   }
+   &__text {
+      color: $subsidiary;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 35px;
+   }
+   &__form {
+      display: flex;
+   }
+   &__input {
+      padding: 10px 11px;
+      border: none;
+      background-color: $bg;
+      max-width: 170px;
+      line-height: 1;
+      width: 100%;
+      @extend %DMSans-400;
+      &::placeholder {
+         font-size: 12px;
+         line-height: 16px;
+         color: #234969;
+         @extend %DMSans-400;
+      }
+   }
+   &__btn {
+      color: #fff;
+      background-color: $second;
+      border: none;
+      font-size: 14px;
+      line-height: 1;
+      padding: 10px 18px;
+      cursor: pointer;
+      @extend %DMSans-400;
+   }
+}
+
+.footer-bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 90px;
+   &__list {
+      display: flex;
+   }
+   &__list-item {
+      padding-left: 32px;
+   }
+   &__list-item + .footer-bottom__list-item {
+      position: relative;
+      &::before {
+         content: '';
+         position: absolute;
+         width: 1px;
+         height: 16px;
+         background-color: $subsidiary;
+         top: 6px;
+         left: 17px;
+      }
+   }
+   &__list-link {
+      color: $subsidiary;
+      font-size: 14px;
+   }
+}
+
+
+
 
 
 
