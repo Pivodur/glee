@@ -29,4 +29,11 @@ body {
    margin: 0 auto;
 }
 
-
+.title {
+   font-size: 36px;
+   line-height: 42px;
+   margin-bottom: 24px;
+   @extend %DMSans-700;
+   text-align: center;
+   color: $title;
+}
