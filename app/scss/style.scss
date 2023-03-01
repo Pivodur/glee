@@ -332,9 +332,16 @@
       column-gap: 30px;
       margin-bottom: 48px;
    }
-   &__menu-link {
-      color: #8B8B8B;
-      @extend %DMSans-700;
+   &__menu-btn {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #8B8B8B;
+    @extend %DMSans-700;
+    transition: color .4s;
+    &:hover {
+      color: #1A1A1A;
+    }
    }
    &__items {
       display: grid;
@@ -520,13 +527,16 @@
       column-gap: 25px;
       margin-bottom: 75px;
    }
-   &__menu-link {
-      line-height: 20px;
-      color: #8B8B8B;
-      transition: color .3s;
-      &:hover {
-         color: $title;
-      }
+   &__menu-btn {
+     background-color: transparent;
+     padding: 0;
+     border: none;
+     color: #8B8B8B;
+     @extend %DMSans-700;
+     transition: color .4s;
+     &:hover {
+       color: #1A1A1A;
+     }
    }
    &__items {
       display: grid;
