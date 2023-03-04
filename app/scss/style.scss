@@ -654,6 +654,7 @@
       }
    }
    &__content {
+      background-color: #fff;
       flex-grow: 2;
       padding: 30px;
       display: flex;
@@ -721,8 +722,22 @@
          color: #a3bbc8
       }
    }
-
 }
+
+.blog--with-partners {
+   margin-bottom: -172px;
+}
+
+.partners {
+   background-color: $bg;
+   padding: 264px 0 88px;
+   &__list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center
+   }
+}
+
 
 
  
