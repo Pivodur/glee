@@ -738,6 +738,47 @@
    }
 }
 
+.top {
+   background-color: #edf1f4;
+   padding: 26px 15px 32px;
+}
+
+.breadcrumbs {
+   text-align: center;
+   &__title {
+      @extend %rubik-300;
+      font-size: 36px;
+      line-height: 42px;
+      color: #222933;
+      margin-bottom: 7px;
+   }
+   &__list {
+      display: flex;
+      justify-content: center;
+   }
+   &__list-item {
+      color: #222933;
+      opacity: 0.6;
+      position: relative;
+      padding-right: 20px;
+   }
+   &__list-item::after {
+      position: absolute;
+      content: '/';
+      right: 6px;
+      top: 0;
+   }
+   &__list-item:last-child {
+      padding-right: 0;
+      &::after {
+         display: none;
+      }
+   }
+   &__list-link {
+      color: inherit;
+   }
+}
+
 
 
  
