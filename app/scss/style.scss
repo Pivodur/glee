@@ -730,12 +730,16 @@
 
 .partners {
    background-color: $bg;
-   padding: 264px 0 88px;
+   padding: 78px 0 88px;
    &__list {
       display: flex;
       justify-content: space-around;
       align-items: center
    }
+}
+
+.partners--with-blog {
+   padding-top: 264px;
 }
 
 .top {
@@ -808,6 +812,7 @@
       color: #FFFEFE;
       padding: 19px 10px;
       cursor: pointer;
+      @extend %rubik-500;
    }
    &__bottom {
       display: flex;
