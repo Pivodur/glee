@@ -983,6 +983,42 @@
    }
 }
 
+.achievements {
+   padding: 85px 0 80px;
+   background-color: $dark-bg;
+   &__items {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+   }
+   &__item {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      text-align: center;
+      @extend %DMSans-700;
+      color: #243f4d;
+
+   }
+   &__img-wrapper {
+      margin-top: auto;
+   }
+   &__img {
+      margin: 0 auto;
+   }
+   &__num {
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 11px;
+      margin-top: 12px;
+   }
+   &__text {
+      font-size: 18px;
+      line-height: 32px;
+      // margin-top: auto;
+   }
+}
+
 
  
 
