@@ -1,7 +1,28 @@
 $(function(){
 
-   $(".product-form__num").styler({
+   $(".product-tabs__top-item").on("click", function(e) {
+      e.preventDefault();
+      $(".product-tabs__top-item").removeClass("product-tabs__top-item--active");
+      $(this).addClass("product-tabs__top-item--active");
+      $(".product-tabs__content-item").removeClass("product-tabs__content-item--active");
+      $($(this).attr('href')).addClass("product-tabs__content-item--active");
+   })
 
+   $(".product-form__num").styler()
+
+
+   $(".related__slider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows: false,
+      // infinite: false
+   })
+
+   $(".related__btn--previous").on("click", function(){
+      $(".related__slider").slick('slickPrev')
+   })
+   $(".related__btn--next").on("click", function(){
+      $(".related__slider").slick('slickNext')
    })
 
    $(".product-slide__thumbs").slick({
