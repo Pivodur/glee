@@ -1,5 +1,9 @@
 $(function(){
 
+   const blogImgHeight = document.querySelector('.blog-one__img-left');
+   blogImgHeight.parentNode.style.minHeight = blogImgHeight.offsetHeight + 'px';
+   
+
    $(".product-tabs__top-item").on("click", function(e) {
       e.preventDefault();
       $(".product-tabs__top-item").removeClass("product-tabs__top-item--active");
